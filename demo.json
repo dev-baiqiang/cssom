@@ -1,0 +1,500 @@
+{
+  "type": "stylesheet",
+  "stylesheet": {
+    "rules": [
+      {
+        "type": "rule",
+        "declarations": [
+          {
+            "type": "declaration",
+            "property": "color",
+            "value": "red",
+            "position": {
+              "start": {
+                "line": 85,
+                "column": 5
+              },
+              "end": {
+                "line": 85,
+                "column": 15
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 84,
+            "column": 1
+          },
+          "end": {
+            "line": 86,
+            "column": 2
+          },
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+        },
+        "selectors": [
+          ".even"
+        ]
+      },
+      {
+        "type": "rule",
+        "declarations": [
+          {
+            "type": "declaration",
+            "property": "color",
+            "value": "blue",
+            "position": {
+              "start": {
+                "line": 89,
+                "column": 5
+              },
+              "end": {
+                "line": 89,
+                "column": 16
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 88,
+            "column": 1
+          },
+          "end": {
+            "line": 90,
+            "column": 2
+          },
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+        },
+        "selectors": [
+          ".odd"
+        ]
+      },
+      {
+        "type": "rule",
+        "declarations": [
+          {
+            "type": "declaration",
+            "property": "animation-name",
+            "value": "fade",
+            "position": {
+              "start": {
+                "line": 93,
+                "column": 5
+              },
+              "end": {
+                "line": 93,
+                "column": 25
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          },
+          {
+            "type": "declaration",
+            "property": "animation-duration",
+            "value": "3s",
+            "position": {
+              "start": {
+                "line": 94,
+                "column": 5
+              },
+              "end": {
+                "line": 94,
+                "column": 27
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          },
+          {
+            "type": "declaration",
+            "property": "animation-fill-mode",
+            "value": "forwards",
+            "position": {
+              "start": {
+                "line": 95,
+                "column": 5
+              },
+              "end": {
+                "line": 95,
+                "column": 34
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 92,
+            "column": 1
+          },
+          "end": {
+            "line": 96,
+            "column": 2
+          },
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+        },
+        "selectors": [
+          ".fade-enter-active"
+        ]
+      },
+      {
+        "type": "rule",
+        "declarations": [
+          {
+            "type": "declaration",
+            "property": "animation-name",
+            "value": "fade",
+            "position": {
+              "start": {
+                "line": 99,
+                "column": 5
+              },
+              "end": {
+                "line": 99,
+                "column": 25
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          },
+          {
+            "type": "declaration",
+            "property": "animation-duration",
+            "value": "3s",
+            "position": {
+              "start": {
+                "line": 100,
+                "column": 5
+              },
+              "end": {
+                "line": 100,
+                "column": 27
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          },
+          {
+            "type": "declaration",
+            "property": "animation-direction",
+            "value": "reverse",
+            "position": {
+              "start": {
+                "line": 101,
+                "column": 5
+              },
+              "end": {
+                "line": 101,
+                "column": 33
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          },
+          {
+            "type": "declaration",
+            "property": "animation-fill-mode",
+            "value": "forwards",
+            "position": {
+              "start": {
+                "line": 102,
+                "column": 5
+              },
+              "end": {
+                "line": 102,
+                "column": 34
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 98,
+            "column": 1
+          },
+          "end": {
+            "line": 103,
+            "column": 2
+          },
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+        },
+        "selectors": [
+          ".fade-leave-active"
+        ]
+      },
+      {
+        "type": "keyframes",
+        "name": "fade",
+        "keyframes": [
+          {
+            "type": "keyframe",
+            "declarations": [
+              {
+                "type": "declaration",
+                "property": "opacity",
+                "value": "0",
+                "position": {
+                  "start": {
+                    "line": 107,
+                    "column": 9
+                  },
+                  "end": {
+                    "line": 107,
+                    "column": 19
+                  },
+                  "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+                }
+              }
+            ],
+            "position": {
+              "start": {
+                "line": 106,
+                "column": 5
+              },
+              "end": {
+                "line": 108,
+                "column": 6
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            },
+            "values": [
+              "from"
+            ]
+          },
+          {
+            "type": "keyframe",
+            "declarations": [
+              {
+                "type": "declaration",
+                "property": "opacity",
+                "value": "1",
+                "position": {
+                  "start": {
+                    "line": 110,
+                    "column": 9
+                  },
+                  "end": {
+                    "line": 110,
+                    "column": 19
+                  },
+                  "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+                }
+              }
+            ],
+            "position": {
+              "start": {
+                "line": 109,
+                "column": 5
+              },
+              "end": {
+                "line": 111,
+                "column": 6
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            },
+            "values": [
+              "to"
+            ]
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 105,
+            "column": 1
+          },
+          "end": {
+            "line": 112,
+            "column": 2
+          },
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+        }
+      },
+      {
+        "type": "rule",
+        "declarations": [
+          {
+            "type": "declaration",
+            "property": "width",
+            "value": "100%",
+            "position": {
+              "start": {
+                "line": 115,
+                "column": 5
+              },
+              "end": {
+                "line": 115,
+                "column": 16
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          },
+          {
+            "type": "declaration",
+            "property": "vertical-align",
+            "value": "bottom",
+            "position": {
+              "start": {
+                "line": 116,
+                "column": 5
+              },
+              "end": {
+                "line": 116,
+                "column": 27
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          },
+          {
+            "type": "declaration",
+            "property": "background-color",
+            "value": "#eaeaea",
+            "position": {
+              "start": {
+                "line": 117,
+                "column": 5
+              },
+              "end": {
+                "line": 117,
+                "column": 30
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 114,
+            "column": 1
+          },
+          "end": {
+            "line": 118,
+            "column": 2
+          },
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+        },
+        "selectors": [
+          ".tabbar"
+        ]
+      },
+      {
+        "type": "rule",
+        "declarations": [
+          {
+            "type": "declaration",
+            "property": "padding",
+            "value": "20 0",
+            "position": {
+              "start": {
+                "line": 121,
+                "column": 5
+              },
+              "end": {
+                "line": 121,
+                "column": 18
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          },
+          {
+            "type": "declaration",
+            "property": "width",
+            "value": "50%",
+            "position": {
+              "start": {
+                "line": 122,
+                "column": 5
+              },
+              "end": {
+                "line": 122,
+                "column": 15
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          },
+          {
+            "type": "declaration",
+            "property": "text-align",
+            "value": "center",
+            "position": {
+              "start": {
+                "line": 123,
+                "column": 5
+              },
+              "end": {
+                "line": 123,
+                "column": 23
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          },
+          {
+            "type": "declaration",
+            "property": "vertical-align",
+            "value": "center",
+            "position": {
+              "start": {
+                "line": 124,
+                "column": 5
+              },
+              "end": {
+                "line": 124,
+                "column": 27
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 120,
+            "column": 1
+          },
+          "end": {
+            "line": 125,
+            "column": 2
+          },
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+        },
+        "selectors": [
+          ".tabbar__item"
+        ]
+      },
+      {
+        "type": "rule",
+        "declarations": [
+          {
+            "type": "declaration",
+            "property": "color",
+            "value": "#5577dd",
+            "position": {
+              "start": {
+                "line": 128,
+                "column": 5
+              },
+              "end": {
+                "line": 128,
+                "column": 19
+              },
+              "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+            }
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 127,
+            "column": 1
+          },
+          "end": {
+            "line": 129,
+            "column": 2
+          },
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.even {\n    color: red;\n}\n\n.odd {\n    color: blue;\n}\n\n.fade-enter-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-fill-mode: forwards;\n}\n\n.fade-leave-active {\n    animation-name: fade;\n    animation-duration: 3s;\n    animation-direction: reverse;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade {\n    from {\n        opacity: 0;\n    }\n    to {\n        opacity: 1;\n    }\n}\n\n.tabbar {\n    width: 100%;\n    vertical-align: bottom;\n    background-color: #eaeaea;\n}\n\n.tabbar__item {\n    padding: 20 0;\n    width: 50%;\n    text-align: center;\n    vertical-align: center;\n}\n\n.tabbar__item--active {\n    color: #5577dd;\n}\n"
+        },
+        "selectors": [
+          ".tabbar__item--active"
+        ]
+      }
+    ],
+    "parsingErrors": []
+  }
+}

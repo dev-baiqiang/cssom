@@ -1,0 +1,255 @@
+const css_tree = require('css-tree');
+
+function mapSelectors(selector) {
+    if (!selector) {
+        return [];
+    }
+    return selector.split(/\s*(?![^(]*\)),\s*/).map(function (s) {
+        return s.replace(/\u200C/g, ',');
+    });
+}
+
+function mapPosition(node, css) {
+    let res = {
+        start: {
+            line: node.loc.start.line,
+            column: node.loc.start.column
+        },
+        end: {
+            line: node.loc.end.line,
+            column: node.loc.end.column
+        },
+        content: css
+    };
+    if (node.loc.source && node.loc.source !== '<unknown>') {
+        res.source = node.loc.source;
+    }
+    return res;
+}
+
+function transformAst(node, css, type) {
+    if (type === void 0) {
+        type = null;
+    }
+    if (!node) {
+        return;
+    }
+    if (node.type === 'StyleSheet') {
+        return {
+            type: 'stylesheet',
+            stylesheet: {
+                rules: node.children
+                    .map(function (child) {
+                        return transformAst(child, css);
+                    })
+                    .filter(function (child) {
+                        return child !== null;
+                    })
+                    .toArray(),
+                parsingErrors: []
+            }
+        };
+    }
+    if (node.type === 'Atrule') {
+        let atrule = {
+            type: node.name
+        };
+        if (node.name === 'supports' || node.name === 'media') {
+            atrule[node.name] = node.prelude.value;
+            atrule.rules = transformAst(node.block, css);
+        } else if (node.name === 'page') {
+            atrule.selectors = node.prelude ? mapSelectors(node.prelude.value) : [];
+            atrule.declarations = transformAst(node.block, css);
+        } else if (node.name === 'document') {
+            atrule.document = node.prelude ? node.prelude.value : '';
+            atrule.vendor = '';
+            atrule.rules = transformAst(node.block, css);
+        } else if (node.name === 'font-face') {
+            atrule.declarations = transformAst(node.block, css);
+        } else if (node.name === 'import' || node.name === 'charset' || node.name === 'namespace') {
+            atrule[node.name] = node.prelude ? node.prelude.value : '';
+        } else if (node.name === 'keyframes') {
+            atrule.name = node.prelude ? node.prelude.value : '';
+            atrule.keyframes = transformAst(node.block, css, 'keyframe');
+            atrule.vendor = undefined;
+        } else {
+            atrule.rules = transformAst(node.block, css);
+        }
+        atrule.position = mapPosition(node, css);
+        return atrule;
+    }
+    if (node.type === 'Block') {
+        return node.children
+            .map(function (child) {
+                return transformAst(child, css, type);
+            })
+            .filter(function (child) {
+                return child !== null;
+            })
+            .toArray();
+    }
+    if (node.type === 'Rule') {
+        let value = node.prelude.value;
+        let res = {
+            type: type != null ? type : 'rule',
+            declarations: transformAst(node.block, css),
+            position: mapPosition(node, css)
+        };
+        if (type === 'keyframe') {
+            res.values = mapSelectors(value);
+        } else {
+            res.selectors = mapSelectors(value);
+        }
+        return res;
+    }
+    if (node.type === 'Comment') {
+        return {
+            type: 'comment',
+            comment: node.value,
+            position: mapPosition(node, css)
+        };
+    }
+    if (node.type === 'Declaration') {
+        return {
+            type: 'declaration',
+            property: node.property,
+            value: node.value.value ? node.value.value.trim() : '',
+            position: mapPosition(node, css)
+        };
+    }
+    if (node.type === 'Raw') {
+        return null;
+    }
+    throw Error('Unknown node type ' + node.type);
+}
+
+function cssTreeParse(css, source) {
+    let errors = [];
+    let ast = css_tree.parse(css, {
+        parseValue: false,
+        parseAtrulePrelude: false,
+        parseRulePrelude: false,
+        positions: true,
+        filename: source,
+        onParseError: function (error) {
+            errors.push(source + ':' + error.line + ':' + error.column + ': ' + error.formattedMessage);
+        }
+    });
+    if (errors.length > 0) {
+        throw new Error(errors[0]);
+    }
+    return transformAst(ast, css);
+}
+
+
+function isRule(node) {
+    return node.type === 'rule';
+}
+
+function isDeclaration(node) {
+    return node.type === 'declaration';
+}
+
+function createDeclaration(decl) {
+    return {property: decl.property.toLowerCase(), value: decl.value};
+}
+
+const {
+    RuleSet, InvalidSelector, ClassSelector, TypeSelector, IdSelector, AttributeSelector,
+    PseudoClassSelector, UniversalSelector, SimpleSelectorSequence, Selector
+} = require('./css-selector');
+
+
+function createSimpleSelectorFromAst(ast) {
+    if (ast.type === '.') {
+        return new ClassSelector(ast.identifier);
+    }
+
+    if (ast.type === '') {
+        return new TypeSelector(ast.identifier.replace('-', '').toLowerCase());
+    }
+
+    if (ast.type === '#') {
+        return new IdSelector(ast.identifier);
+    }
+
+    if (ast.type === '[]') {
+        return new AttributeSelector(ast.property, ast.test, ast.test && ast.value);
+    }
+
+    if (ast.type === ':') {
+        return new PseudoClassSelector(ast.identifier);
+    }
+
+    if (ast.type === '*') {
+        return new UniversalSelector();
+    }
+}
+
+function createSimpleSelectorSequenceFromAst(ast) {
+    if (ast.length === 0) {
+        return new InvalidSelector(new Error('Empty simple selector sequence.'));
+    } else if (ast.length === 1) {
+        return createSimpleSelectorFromAst(ast[0]);
+    } else {
+        return new SimpleSelectorSequence(ast.map(createSimpleSelectorFromAst));
+    }
+}
+
+function createSelectorFromAst(ast) {
+    if (ast.length === 0) {
+        return new InvalidSelector(new Error('Empty selector.'));
+    } else if (ast.length === 1) {
+        return createSimpleSelectorSequenceFromAst(ast[0][0]);
+    } else {
+        let simpleSelectorSequences = [];
+        let simpleSelectorSequence;
+        let combinator;
+        for (let i = 0; i < ast.length; i++) {
+            simpleSelectorSequence = createSimpleSelectorSequenceFromAst(ast[i][0]);
+            combinator = ast[i][1];
+            if (combinator) {
+                simpleSelectorSequence.combinator = combinator;
+            }
+            simpleSelectorSequences.push(simpleSelectorSequence);
+        }
+
+        return new Selector(simpleSelectorSequences);
+    }
+}
+
+const parser = require('./parser');
+
+function createSelector(sel) {
+    try {
+        let parsedSelector = parser.parseSelector(sel);
+        if (!parsedSelector) {
+            return new InvalidSelector(new Error('Empty selector'));
+        }
+
+        return createSelectorFromAst(parsedSelector.value);
+    } catch (e) {
+        return new InvalidSelector(e);
+    }
+}
+
+
+function fromAstNodes(astRules) {
+    return astRules.filter(isRule).map((rule) => {
+        let declarations = rule.declarations.filter(isDeclaration).map(createDeclaration);
+        let selectors = rule.selectors.map(createSelector);
+
+        return new RuleSet(selectors, declarations);
+    });
+}
+
+function createSelectorsFromSyntaxTree(ast) {
+    const nodes = ast.stylesheet.rules;
+    return fromAstNodes(nodes);
+}
+
+module.exports = {
+    cssTreeParse,
+    createSelectorsFromSyntaxTree
+}
+
