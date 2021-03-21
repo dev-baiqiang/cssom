@@ -1,5 +1,5 @@
-logs
 *.log
+cmake-build-debug
 .idea
 out
 node_modules
@@ -7,3 +7,5 @@ node_modules
 dist/
 .vscode
 yarn.lock
+addon
+velocity

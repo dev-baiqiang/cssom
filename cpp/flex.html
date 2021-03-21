@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+</head>
+
+<style>
+    /* Common Styles */
+    .content,
+    .content1,
+    .content2 {
+        background: aqua;
+        color: #fff;
+        font: 100 24px/100px sans-serif;
+        /*width: 600px;*/
+        /*height: 300px;*/
+        text-align: center;
+    }
+
+    .content div,
+    .content1 div,
+    .content2 div {
+        /*height: 50%;*/
+        /*width: 300px;*/
+    }
+    .red {
+        background: orangered;
+    }
+    .green {
+        background: yellowgreen;
+    }
+    .blue {
+        background: steelblue;
+    }
+
+    /* Flexbox Styles */
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content1 {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .content2 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+</style>
+<body>
+<h4>This is an example for flex-wrap:wrap </h4>
+<div class="content">
+    <div class="red">1</div>
+    <div class="green">2</div>
+    <div class="blue">3</div>
+</div>
+<h4>This is an example for flex-wrap:nowrap </h4>
+<div class="content1">
+    <div class="red">1</div>
+    <div class="green">2</div>
+    <div class="blue">3</div>
+</div>
+<h4>This is an example for flex-wrap:wrap-reverse </h4>
+<div class="content2">
+    <div class="red">1</div>
+    <div class="green">2</div>
+    <div class="blue">3</div>
+</div>
+
+
+</body>
+</html>
