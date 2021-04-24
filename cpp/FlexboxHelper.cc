@@ -6,6 +6,7 @@
  */
 
 
+#include <stdexcept>
 #include "FlexboxHelper.h"
 #include "FlexLine.h"
 #include "Item.h"

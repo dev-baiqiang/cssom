@@ -5,6 +5,7 @@
  * found in the LICENSE file.
  */
 
+#include <stdexcept>
 #include "FlexLayout.h"
 
 FlexLayout::FlexLayout() : mFlexboxHelper(this) {
